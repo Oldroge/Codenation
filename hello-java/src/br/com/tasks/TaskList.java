@@ -5,7 +5,7 @@ public class TaskList {
     public static void main(String[] args) {
         System.out.println("My tasks");
         System.out.println("==================");
-        ArrayTask tasks = new ArrayTask(3);
+        NewTaskList tasks = new NewTaskList();
         Tasks task1 = new Tasks("Water plants");
         Tasks task2 = new Tasks("To study");
         Tasks task3 = new Tasks("To work");
