@@ -1,4 +1,5 @@
-// Como toda aplicação Java precisa obrigatoriamente estar dentro de um pacote, 
+// Como toda aplicação Java precisa obrigatoriamente estar dentro de um pacote
+// principalmente por organização de arquivos, criamos um pacote aqui
 package br.com;
 
 public class Principal {
