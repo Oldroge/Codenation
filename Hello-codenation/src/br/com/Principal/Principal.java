@@ -1,6 +1,6 @@
 // Como toda aplicação Java precisa obrigatoriamente estar dentro de um pacote
 // principalmente por organização de arquivos, criamos um pacote aqui
-package br.com;
+package br.com.Principal;
 
 import br.com.variables.Primitives;
 
