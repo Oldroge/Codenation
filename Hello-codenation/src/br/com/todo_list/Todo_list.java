@@ -9,13 +9,24 @@ public class Todo_list {
 //      para isntanciar os métodos de uma classe:
 //      nomeDaClasse nomeDaVariável = new nomeDaClasse("valor");
 
+        ListaTarefas listaDeTarefas = new ListaTarefas();
+
 //      A palavra reservada new é utilizada cada vez que for instanciada
 //      um novo objeto/método
-        Tarefa tarefa1 = new Tarefa("Estudar java");
 
-        tarefa1.exibirTarefa();
+        listaDeTarefas.adicionarTarefa("Estudar java");
+        listaDeTarefas.adicionarTarefa("Limpar a casa");
+        listaDeTarefas.adicionarTarefa("Fazer jantar");
+        listaDeTarefas.adicionarTarefa("Fazer alguma coisa");
 
-        System.out.println("A tarefa tem: " + tarefa1.obterTamanhoDaTarefa() + " caracteres");
+        listaDeTarefas.removerTarefa(0);
+
+        listaDeTarefas.exibirTarefas();
+
+        System.out.println("Buscando tarefa...");
+        Tarefa tarefas = listaDeTarefas.buscarTarefa("Fazer alguma coisa");
+        tarefas.exibirTarefa();
+
 
 
     }
