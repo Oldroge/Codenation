@@ -13,19 +13,20 @@ public class Todo_list {
 
 //      A palavra reservada new é utilizada cada vez que for instanciada
 //      um novo objeto/método
-        Tarefa tarefa1 = new Tarefa("Estudar java");
-        Tarefa tarefa2 = new Tarefa("Limpar a casa");
-        Tarefa tarefa3 = new Tarefa("Fazer jantar");
-        Tarefa tarefa4 = new Tarefa("Fazer alguma coisa");
 
-        listaDeTarefas.adicionarTarefa(tarefa1);
-        listaDeTarefas.adicionarTarefa(tarefa2);
-        listaDeTarefas.adicionarTarefa(tarefa3);
-        listaDeTarefas.adicionarTarefa(tarefa4);
+        listaDeTarefas.adicionarTarefa("Estudar java");
+        listaDeTarefas.adicionarTarefa("Limpar a casa");
+        listaDeTarefas.adicionarTarefa("Fazer jantar");
+        listaDeTarefas.adicionarTarefa("Fazer alguma coisa");
+
+        listaDeTarefas.removerTarefa(0);
 
         listaDeTarefas.exibirTarefas();
 
-        System.out.println("A tarefa '" + tarefa1.descricao +  "' tem " + tarefa1.obterTamanhoDaTarefa() + " caracteres");
+        System.out.println("Buscando tarefa...");
+        Tarefa tarefas = listaDeTarefas.buscarTarefa("Fazer alguma coisa");
+        tarefas.exibirTarefa();
+
 
 
     }
